@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+    // Example input list of integers
+    numbers := []int{1, 2, 3, 4, 5}
+
+    // Create a new list to store the cubes
+    cubes := make([]int, len(numbers))
+
+    // Loop through the input list and calculate the cube of each number
+    for i, num := range numbers {
+        cubes[i] = num * num * num
+    }
+
+    // Print out the original list and the new list of cubes
+    fmt.Println("Original list:", numbers)
+    fmt.Println("Cubes of the original list:", cubes)
+}
